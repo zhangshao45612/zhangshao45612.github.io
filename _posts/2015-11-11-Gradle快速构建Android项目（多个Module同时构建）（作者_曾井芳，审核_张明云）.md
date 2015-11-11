@@ -1,7 +1,15 @@
+---
+layout: post
+title: Gradle快速构建Android项目（多个Module同时构建）
+category: Android
+tags: Android
+keywords: Android Studio,Gradle,多个Module
+description: Gradle快速构建Android项目（多个Module同时构建）
+---
+
 【开篇语】小编菜鸟一只，初入AndroidStudio,只是想搞清楚项目从Eclipse导入到AndroidStudio的过程中是怎么回事。所以简单的看了下，gradle用法还有很多，其中原理还待深入了解。
 
-一、Gradle准备
-----------
+## 一、Gradle准备
 
  1. 安装好AS后，有默认的Gradle,但是建议使用自己的Gradle,本人下载的 gradle-2.5-all版本；
  2. 配置环境变量：
@@ -11,8 +19,8 @@
   运行 gradle -v    如图  既是配置成功
     ![gradle配置成功](http://img.blog.csdn.net/20151104213925614)
 
-二、演示项目的项目结构
------------
+## 二、演示项目的项目结构
+
 ```
 |—— demo：
    |—— libproject:
@@ -29,8 +37,7 @@
 >      project0 为主工程，project0 依赖项目 project1,project2,project3,project4
 >      project4  依赖 project5，project6
 
-三、settings.gradle配置
------------------
+## 三、settings.gradle配置
 
 > 一个多项目构建必须在根项目的根目录下包含settings.gradle文件，因为它指明了那些包含在多项目构建中的项目。
 
@@ -56,10 +63,8 @@ include ':project:project6
 > 记住主工程的项目project0以及被依赖的项目一定要在此配置，否则会出现错误，错误详情请
 > [点击：Eclipse转AndroidStuido天坑](http://blog.csdn.net/jf_1994/article/details/49645175)
 
-
-四、build.gradle配置
-----------------
-
+ 
+## 四、build.gradle配置
      
 
  - 项目文件根目录 demo下配置一个全局的build.gradle
@@ -147,8 +152,8 @@ android {
 
 ```
 
-五、构建项目、执行gradle命令
------------------
+## 五、构建项目、执行gradle命令
+
 
  - 构建项目一: 在项目根目录demo下执行如下doc命令
 

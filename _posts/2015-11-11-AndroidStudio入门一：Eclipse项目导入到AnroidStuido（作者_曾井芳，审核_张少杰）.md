@@ -1,5 +1,13 @@
-一、AndroidStudio安装
------------------
+---
+layout: post
+title: AndroidStudio入门一：Eclipse项目导入到AnroidStuido
+category: Android
+tags: Android
+keywords: Android Studio,Eclipse,项目导入
+description: AndroidStudio入门一：Eclipse项目导入到AnroidStuido
+---
+
+## 一、AndroidStudio安装
 
      关于安装的问题就不多说啦，下载点击安装，默认就是；
      需要注意的就是在安装后会出现：
@@ -7,8 +15,7 @@
     解决方法：关闭AS，找到安装目录下的 ***Bin\idea.properties 文件，在最后一行添加以下代码
      　 disable.android.first.run=true
 
-二、Gradle准备
-----------
+## 二、Gradle准备
 
  1. 安装好AS后，有默认的Gradle,但是建议使用自己的Gradle,本人下载的 gradle-2.5-all版本；
  2. 配置环境变量：
@@ -18,9 +25,7 @@
   运行 gradle -v    如图  既是配置成功
     ![gradle配置成功](http://img.blog.csdn.net/20151104213925614)
 
-三、Eclipse导出项目
--------------
-
+## 三、Eclipse导出项目
    
 
  - 1、 保证项目编译运行正常，选中主工程，点击File/Export  选择Android/Generare Gradle build
