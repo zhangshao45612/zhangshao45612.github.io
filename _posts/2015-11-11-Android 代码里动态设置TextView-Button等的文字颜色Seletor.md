@@ -1,3 +1,13 @@
+---
+layout: post
+title: Android 代码里动态设置TextView-Button等的文字颜色Seletor
+category: Android
+tags: Android
+keywords: 动态设置,setTextColor,颜色Seletor
+description: Android 代码里动态设置TextView-Button等的文字颜色Seletor
+---
+
+
 - 前言
 今天遇到个很蛋疼的问题，下载时，多个按钮共用一个button，也就是不同下载状态下，button的背景以及字体颜色都不一样，结果自己挖了坑把自己埋进去了。
 
